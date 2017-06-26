@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mountains" translatesAutoresizingMaskIntoConstraints="NO" id="Tyz-6X-AAE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Clear" translatesAutoresizingMaskIntoConstraints="NO" id="bic-L2-VP1">
+                                <rect key="frame" x="20" y="20" width="145" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="CuP-Ls-ZFl"/>
+                                    <constraint firstAttribute="height" constant="128" id="UBI-a8-6TB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Weather" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="43" translatesAutoresizingMaskIntoConstraints="NO" id="17P-OR-L6y">
+                                <rect key="frame" x="0.0" y="156" width="414" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="8eU-Ro-h9R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="85"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By: Matt Lopez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8i-J8-zwp">
+                                <rect key="frame" x="281.66666666666674" y="683" width="132.33333333333331" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="JMW-P8-d8e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="J8i-J8-zwp" secondAttribute="bottom" id="5UC-Ua-E8B"/>
+                            <constraint firstAttribute="trailing" secondItem="J8i-J8-zwp" secondAttribute="trailing" id="DUJ-c6-g3o"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Tyz-6X-AAE" secondAttribute="bottom" id="HGu-rB-eue"/>
+                            <constraint firstItem="17P-OR-L6y" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="I1i-dn-f3G"/>
+                            <constraint firstItem="Tyz-6X-AAE" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="JSy-74-0XW"/>
+                            <constraint firstItem="Tyz-6X-AAE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="OyT-9Q-GFl"/>
+                            <constraint firstItem="bic-L2-VP1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="RJb-7O-E3Z"/>
+                            <constraint firstItem="17P-OR-L6y" firstAttribute="top" secondItem="bic-L2-VP1" secondAttribute="bottom" constant="8" id="Tgv-TW-PAs"/>
+                            <constraint firstItem="bic-L2-VP1" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="YHh-2I-b9w"/>
+                            <constraint firstAttribute="trailing" secondItem="17P-OR-L6y" secondAttribute="trailing" id="Z46-VD-0iN"/>
+                            <constraint firstAttribute="trailing" secondItem="Tyz-6X-AAE" secondAttribute="trailing" id="bv8-CL-g3y"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="374.18478260869568"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Clear" width="107" height="107"/>
+        <image name="mountains" width="2560" height="1600"/>
+    </resources>
+</document>
